@@ -28,11 +28,17 @@ hr {
 }
 
 .container-center {
+    
     max-width: 600px;
     margin: auto;
 }
 
 /** links **/
+
+a.link:hover {
+    color: var(--hover-color);
+}
+
 .link {
     box-sizing: border-box;
     text-decoration: none;
@@ -44,8 +50,8 @@ hr {
     border-radius: 0.5rem;
     color: white;
     display: block;
-    max-width: 140px;
-    margin: 1rem 1rem 1rem 0rem;
+    max-width: 150px;
+    margin: auto ;
 }
 
 .link-secondary {
@@ -54,11 +60,7 @@ hr {
     border: 1px solid var(--primary-color);
     display: block;
     max-width: 140px;
-    margin: 1rem 1rem 1rem 0rem;
-}
-
-a.menu-item:hover {
-    color: var(--hover-color);
+    margin: auto;
 }
 
 
@@ -134,6 +136,7 @@ a.menu-item:hover {
 /** sections **/
 
 .section {
+    
     padding: 2rem;
 }
 
@@ -145,6 +148,8 @@ a.menu-item:hover {
 .ow {
     background-color: var(--off-white);
 }
+
+
 
 /** footers **/
 
