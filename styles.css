@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
-    --primary-color: #7C3AED;
+    --primary-color: #1e3a8a;
+    --hover-color: #60a5fa;
     --off-white: #F3F4F6;
     --dark-gray: #6B7280;
 }
@@ -56,7 +57,10 @@ hr {
     margin: 1rem 1rem 1rem 0rem;
 }
 
-/** look into BEM naming convention for CSS **/
+a.menu-item:hover {
+    color: var(--hover-color);
+}
+
 
 /** lists **/
 
@@ -77,10 +81,16 @@ hr {
     color: white;
     padding: 1rem;
     border-bottom-left-radius: 1rem;
+    font-weight: bold;
 }
 
-.navigation .nav-brand {
-    font-weight: bold;
+.nav-brand{
+    font-family: 'Calligraffitti', cursive;
+    font-size: 2em;
+}
+
+.navigation .menu-item {
+    font-size: 1.2em;
 }
 
 .navigation .nav-pills {
@@ -93,6 +103,7 @@ hr {
 
 .navigation .link-active {
     font-weight: bold;
+    color: var(--hover-color);
 }
 
 /** header **/
@@ -104,7 +115,7 @@ hr {
 }
 
 .hero .hero-img {
-    max-width: 80%;
+    max-width: 800%;
     width: 350px;
     display: block;
     margin: auto;
