@@ -41,8 +41,10 @@ a.link:hover {
 .link-primary {
     background-color: var(--primary-color);
     border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
     color: white;
-    display: block;
+    text-align: center;
+    display: inline-flex;
     max-width: 150px;
     margin: auto ;
 }
@@ -51,8 +53,8 @@ a.link:hover {
     color: var(--primary-color);
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
-    display: block;
-    max-width: 140px;
+    display: inline-flex;
+    max-width: 150px;
     margin: auto;
 }
 
@@ -204,8 +206,21 @@ a.link:hover {
 
 /** projects **/
 .showcase-list {
-    padding: 2rem;
+    border-radius: 1rem;
+    padding: 3rem;
+    max-width: 80%;
+    text-align: center;
+    margin: 3rem auto;
+    
 }
+
+.showcase-list h1 {
+    margin: 0.5rem;
+  }
+  
+.showcase-list p {
+    padding-bottom: 1rem;
+  }
 
 /** blogs **/
 .showcase-blog {
