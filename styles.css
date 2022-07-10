@@ -9,9 +9,21 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    margin: 0px auto;
-    max-width: 85%;
+    margin: 0;
     
+    
+}
+
+main {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
 }
 
 
@@ -94,10 +106,6 @@ a.link:hover {
     font-size: 1.2em;
 }
 
-.navigation .nav-pills {
-    text-align: right;
-}
-
 .navigation .link {
     color: white;
 }
@@ -156,11 +164,18 @@ a.link:hover {
 
 .footer {
     background-color: var(--primary-color);
-    padding: 4rem 1rem;
+    padding: 1rem;
     text-align: center;
     color: white;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-inline-start: 0px;
 }
 
 .footer .link {
@@ -168,13 +183,12 @@ a.link:hover {
 }
 
 .footer .footer-header {
+    text-align: center;
     font-weight: bold;
     font-size: large;
 }
 
-.footer ul {
-    padding-inline-start: 0px;
-}
+
 
 .footer-twitter {
   background-image: url(images/twittericon30by30.svg);
